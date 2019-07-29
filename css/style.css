@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300;
+    zoom:80%;
+}
+
+div.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    /* background: url(../img/vitaldermax-bg.jpg) center top no-repeat; */
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+div.title {
+    color: rgb(41, 38, 38);
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+
+
+/* customisations */
+.flags {
+    
+    padding-top: 1em;
+    margin-bottom : 2em;
+    position:fixed;
+    top : 0;
+    left : 7em;
+    z-index: 2;
+    background-color: rgba(86, 77, 74, 0.6);
+    border-radius : 0 0 1em 1em;
+}
+.single-flag{
+    
+    display:inline-block;
+    padding:0.2em;
+}
+.single-flag:first-child:hover{
+    border-radius: 0 0 0 1em;
+}
+.single-flag:last-child{
+    margin-right: 1em;
+}
+.single-flag:last-child:hover{
+    border-radius: 0 0 1em 0;
+}
+
+.single-flag:hover{
+    background-color: rgba(222, 26, 26, 0.6);
+    cursor: pointer;
+    
+}
+
+.single-flag-image{
+    width : 2.5em;
+    display: block;
+    margin:auto;
+    
+}
+
+.flag-country{
+    text-align: center;
+    font-size : 0.6em;
+    color: #E8EBF7;
+}
+
+.hero-image{
+    width:100%;
+}
+
+.flags-bottom{
+    padding:2em;
+    margin : 2em;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    background-color: #E8EBF7;
+    border-radius: 1em;
+}
+
+.single-flag-big{
+    cursor: pointer;
+}
+
+.single-flag-image-big{
+    width : 4em;
+    display: block;
+    margin: auto;
+}
+
+.flag-country-big{
+    font-size: 0.8em;
+    text-align: center;
+    color: #DE1A1A;
+    user-select: none;
+}
+
+.logo-image{
+    display: block;
+    margin: auto;
+}
+
+.description{
+    padding:3em;
+    margin : 2em;
+    text-align: justify;
+    width : 80%;
+    display:block;
+    margin:auto;
+    font-size: 0.7em;
+    color:lightgray;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        zoom:80%;
+        width:100vw;
+        
+    }
+    .flags {
+        display:none;
+        
+
+    }
+    .hero-image{
+        width:100%;
+    }
+
+}
