@@ -1,13 +1,14 @@
 html {
     height: 100%;
-    font-size: 24px;
+    padding:0;
+    width:100%;
 }
 
 body {
     margin: 0;
     height: 100%;
     font-family: 'Open Sans', sans-serif !important;
-    font-weight: 300;
+    
     zoom:80%;
 }
 
@@ -39,10 +40,10 @@ div.title {
 .flags {
     
     padding-top: 1em;
-    margin-bottom : 2em;
+    
     position:fixed;
     top : 0;
-    left : 7em;
+    left : 9em;
     z-index: 2;
     background-color: rgba(86, 77, 74, 0.6);
     border-radius : 0 0 1em 1em;
@@ -69,7 +70,7 @@ div.title {
 }
 
 .single-flag-image{
-    width : 2.5em;
+    width : 3em;
     display: block;
     margin:auto;
     
@@ -130,16 +131,169 @@ div.title {
 @media screen and (max-width: 768px) {
     body {
         zoom:80%;
-        width:100vw;
+        
         
     }
+    /* flags top */
     .flags {
-        display:none;
         
+        padding-top: 1em;
+        
+        position:fixed;
+        top : 0;
+        left : 8em;
+        z-index: 2;
+        background-color: rgba(86, 77, 74, 0.6);
+        border-radius : 1em 0 0 1em;
 
     }
-    .hero-image{
-        width:100%;
+    .single-flag{
+    
+        display:inline-block;
+        padding:0.2em;
     }
+    .single-flag:first-child:hover{
+        border-radius: 0 0 0 1em;
+    }
+    .single-flag:last-child{
+        margin-right: 1em;
+    }
+    .single-flag:last-child:hover{
+        border-radius: 0 0 1em 0;
+    }
+
+    /* hero image */
+    .hero-image{
+        width:100% !important;
+    }
+
+    /* big flags section */
+    .flags-bottom{
+        padding:0.2em;
+        padding-top : 1em;
+       
+        
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        background-color: #E8EBF7;
+        border-radius: 1em;
+    }
+    
+    .single-flag-big{
+        cursor: pointer;
+    }
+    
+    .single-flag-image-big{
+        width : 4em;
+        display: block;
+        margin: auto;
+    }
+    
+    .flag-country-big{
+        font-size: 0.8em;
+        text-align: center;
+        color: #DE1A1A;
+        user-select: none;
+    }
+
+    /* brand name */
+    .title{
+        font-size: 3em !important;
+    }
+    /* logo image */
+    .logo-image{
+        width : 20em;
+        display: block;
+        margin: auto;
+    }
+    .description{
+        padding:3em;
+        margin : 2em;
+        text-align: justify;
+        width : 80%;
+        display:block;
+        margin:auto;
+        font-size: 1em;
+        color:lightgray;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        zoom:80%;
+        
+        
+    }
+    /* flags top */
+    .flags {
+        
+        padding-top: 1em;
+        display:none;
+        position:fixed;
+        top : 0;
+        left : 8em;
+        z-index: 2;
+        background-color: rgba(86, 77, 74, 0.6);
+        border-radius : 1em 0 0 1em;
+
+    }
+    .single-flag{
+    
+        display:inline-block;
+        padding:0.2em;
+    }
+    .single-flag:first-child:hover{
+        border-radius: 0 0 0 1em;
+    }
+    .single-flag:last-child{
+        margin-right: 1em;
+    }
+    .single-flag:last-child:hover{
+        border-radius: 0 0 1em 0;
+    }
+
+    /* hero image */
+    .hero-image{
+        width:100% !important;
+    }
+
+    /* big flags section */
+    .flags-bottom{
+        padding:0.2em;
+        padding-top : 1em;
+       
+        
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        background-color: #E8EBF7;
+        border-radius: 1em;
+    }
+    
+    .single-flag-big{
+        cursor: pointer;
+    }
+    
+    .single-flag-image-big{
+        width : 4em;
+        display: block;
+        margin: auto;
+    }
+    
+    .flag-country-big{
+        font-size: 0.8em;
+        text-align: center;
+        color: #DE1A1A;
+        user-select: none;
+    }
+
+    /* brand name */
+    .title{
+        font-size: 2em !important;
+    }
+    
+    
+
+
 
 }
